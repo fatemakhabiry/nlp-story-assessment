@@ -1,0 +1,33 @@
+# Core ML and data processing
+torch>=2.4,<3
+transformers>=4.48,<5
+accelerate>=1.0,<1.10
+datasets>=3,<5
+scikit-learn>=1.4,<2
+pandas>=2.0,<3
+numpy>=1.26,<3
+huggingface_hub>=0.27
+safetensors>=0.4
+
+# Task 1 retrieval
+sentence-transformers>=3,<6
+faiss-cpu>=1.8
+rank-bm25>=0.2.2
+
+# Task 2 QLoRA training (CUDA runtime)
+bitsandbytes>=0.43
+peft>=0.11
+torchao>=0.16.0
+
+# Task 3 ModernBERT CPU deployment
+onnxruntime>=1.20
+optimum-onnx[onnxruntime]
+
+# Task 3 GGUF chatbot deployment
+llama-cpp-python>=0.3
+
+# Evaluation and utilities
+matplotlib>=3.8
+seaborn>=0.13
+psutil>=5.9
+requests>=2.31
